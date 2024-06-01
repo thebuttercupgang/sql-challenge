@@ -7,7 +7,7 @@ DROP TABLE titles;
 
 --creating tables for data
 CREATE TABLE departments (
-    dept_no VARCHAR(30),
+    dept_no VARCHAR(30) NOT NULL,
     dept_name VARCHAR(30),
     PRIMARY KEY (dept_no),
     UNIQUE (dept_name)
@@ -24,7 +24,7 @@ CREATE TABLE dept_manager (
 );
 
 CREATE TABLE employees (
-	emp_no INT PRIMARY KEY,
+	emp_no INT NOT NULL PRIMARY KEY,
 	emp_title VARCHAR(30),
 	birth_date DATE,
 	first_name VARCHAR(30),
@@ -39,7 +39,7 @@ CREATE TABLE salaries (
 );
 
 CREATE TABLE titles (
-	title_id VARCHAR(30) PRIMARY KEY,
+	title_id VARCHAR(30) NOT NULL PRIMARY KEY,
 	title VARCHAR(30)
 );
 
